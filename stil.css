@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+  --metin: #1c1c1e;
+  --ikincil: #636366;
+  --zemin: #ffffff;
+  --vurgu: #c2261d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --metin: #f2f2f7;
+    --ikincil: #aeaeb2;
+    --zemin: #1c1c1e;
+    --vurgu: #ff6b61;
+  }
+}
+body {
+  margin: 0;
+  background: var(--zemin);
+  color: var(--metin);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+h1 { font-size: 1.8rem; line-height: 1.25; margin: 0.5rem 0; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+a { color: var(--vurgu); }
+li { margin: 0.4rem 0; }
+.tarih, .dil { color: var(--ikincil); font-size: 0.9rem; }
+.dil { text-align: right; margin: 0; }
